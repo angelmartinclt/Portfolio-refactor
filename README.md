@@ -6,4 +6,6 @@ Coding languages used in this portfolio are :
 - JavaScript
 - Node.js
 
-Users do not have to install any NPM packages or dependencies!
+Users do not have to install any NPM packages or dependencies, visit our deployed link!
+
+Hosted link : https://main.dd5wgm27ab9we.amplifyapp.com/
