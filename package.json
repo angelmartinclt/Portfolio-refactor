@@ -1,0 +1,15 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Landing page for project",
+  "license": "ISC",
+  "author": "Angel",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/index.css"
+  },
+  "devDependencies": {
+    "sass": "^1.97.1"
+  }
+}

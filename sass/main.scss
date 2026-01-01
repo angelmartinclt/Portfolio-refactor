@@ -1,0 +1,24 @@
+/*PROJECT PAGE */  
+
+@use "abstracts/functions";
+@use "abstracts/mixins";
+@use "abstracts/variables";
+
+
+@use "base/base";
+@use "base/animations";
+@use "base/typography";
+@use "base/utilities";
+
+@use "pages/home";
+@use "pages/reflection";
+@use "pages/contact";
+@use "pages/resume";
+@use "pages/project";
+
+@use "components/button" ;
+@use "components/slideshow";
+
+@use "layout/header";
+@use "layout/navigation";
+@use "layout/footer";

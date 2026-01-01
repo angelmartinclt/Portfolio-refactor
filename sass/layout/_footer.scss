@@ -1,0 +1,79 @@
+ @use "../abstracts/variables" as *;
+ 
+ .footer{
+    background-image: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)), url(/pictures/banner.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+    color: $color-white;
+     padding: 3rem;
+
+    &_icon{
+        width: 2.2rem;
+        height: 2.2rem;
+        object-fit: contain;
+    }
+    
+
+    &_logo-box{
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    &_logo{
+        width: 15rem;
+        height: auto;
+        
+    }
+
+    &_navigation{
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 1rem ;
+    }
+
+    &_list{
+        list-style: none;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        max-width: 40rem;
+        margin: 0 auto;
+        gap: 3rem;
+        
+
+    }
+
+    &_item{
+        display: inline-block;
+        font-size: 2rem;
+        
+        
+       
+        
+
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+    }
+
+    &_link{
+
+        &:link, &:visited{
+            color: $color-grey-light-1;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+            
+        }
+
+        &:hover, &:active{
+            color: $color-primary;
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            // transform: rotate(5deg) scale(1.3);
+        }
+    }
+
+ }

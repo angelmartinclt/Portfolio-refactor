@@ -1,0 +1,194 @@
+ @use "../abstracts/variables" as *;
+
+//  .projects-carousel{
+//     padding: 6rem 0;
+//     text-align: center;
+//  }
+
+//  .carousel{
+//     position: relative;
+//     max-width: 90rem;
+//     margin: auto;
+//  }
+
+//  .carousel_track-container{
+//     overflow: hidden;
+//  }
+
+//  .carousel_track{
+//     display: flex;
+//     transition: transform 0.4s ease;
+//  }
+
+//  .carousel_slide{
+//     min-width: 100%;
+//     display: flex;
+//     justify-content: center;
+//  }
+
+//  .project-card{
+//     background-color: $color-grey-light-1;
+//     padding: 2.5rem;
+//     border-radius: 1.5rem;
+//     width: 70%;
+//     box-shadow: 0 1rem 3rem $color-secondary;
+//     cursor: pointer;
+
+//     img{
+
+//         width: 100%;
+//         border-radius: 1rem;
+//         margin-bottom: 1.5rem;
+//     }
+//  }
+
+//  .carousel_btn{
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     background: none;
+//     border: none;
+//     font-size: 3rem;
+//     color: $color-primary;
+//     cursor: pointer;
+
+
+//     &--left{
+//         left: -4rem;
+//     }
+
+//     &--right{
+//         right:-4rem;
+//     }
+//  }
+
+.section-book{
+    padding: relative;
+    background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+}
+
+.book{
+    background-image: linear-gradient(105deg, rgba($color-primary-light, .9) 0%,
+    rgba($color-primary-light, .4) 50%,
+    transparent 50%), url(/pictures/booking.jpeg);
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem $color-charcoal;
+
+    height: 50rem;
+
+    &_form{
+        width: 50%;
+        padding: 6rem;
+    }
+}
+
+.form{
+    &_group:not(:last-child){
+        margin-bottom: 2rem;
+    }
+
+    &_input{
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem ;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        border-radius: 2px;
+        background-color: $color-white;
+        border: none;
+
+        &::-webkit-input-placeholder{
+
+            color: $color-primary-dark;
+        }
+    }
+
+    &_input:focus{
+        outline: none;
+        box-shadow: 0 1rem 2rem $color-black;
+        border-bottom: 3px solid $color-primary;
+    }
+
+    &:focus:invalid{
+        border-bottom: 3px solid $color-primary;
+    }
+
+    
+
+    &_label{
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all;
+    }
+
+    &_input:placeholder-show + &_label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+    &_radio-input{
+        display: none;
+        flex-direction: row;
+        
+    }
+
+    &_radio-label{
+        font-size: 1rem;
+        cursor: pointer;
+        position: relative;
+        padding-left:4.5rem ;
+       flex-direction: row;
+    }
+
+    &.form_radio-group{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    &_radio-button{
+        height: 3rem;
+        width: 3rem;
+        border: 5px solid $color-grey-dark;
+        border-radius: 50%;
+        position: relative;
+        display: inline-flex;
+        left: 0;
+        top: -.4rem;
+        flex-direction: row;
+
+        
+
+        &::after{
+            content: "";
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 50%;
+            position:absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background-color: $color-grey-dark;
+            opacity: 0;
+        }
+    }
+
+    &_radio-input:checked ~ &_radio-label &_radio-button::after{
+        opacity: 1;
+    }
+    
+}
+
+.indvidual-card p{
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.individual-card ul{
+    list-style-type: disc;
+}

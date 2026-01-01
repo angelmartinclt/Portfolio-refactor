@@ -1,0 +1,35 @@
+ @use "../abstracts/variables" as *;
+.section-about{
+    background-color: $color-primary-light;
+    padding-bottom: 8rem;
+    margin-bottom: 0;
+}
+
+.home-scrollable-box{
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0;
+    
+}
+
+#home-scrollable-container{
+    max-width: 90rem;
+    width: 90%;
+    max-height: 30rem;
+    padding: 3rem;
+    overflow-y: auto;
+    background-color: $color-grey-light-1;
+    border-radius: 1.5rem;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.1);
+    color: $color-charcoal;
+    font-family: "Montserrat Alternates" ,sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    scroll-behavior: smooth;
+
+    &:hover{
+        box-shadow: 0 2rem 4rem $color-secondary;
+    }    
+}
+
+
